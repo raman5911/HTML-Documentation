@@ -1,0 +1,133 @@
+    * {
+        scroll-behavior: smooth;
+      }
+
+    .title {
+        text-align: center;
+        font-size: 1.7em;
+    }
+   #main-doc
+   {
+       height : 91%;
+       width : 75%;
+       border : 1px solid;
+       padding : 20px;
+       float : right;
+       margin : auto;
+       font-size : 120%;
+       position : fixed;
+       right : 0px;
+       overflow : scroll;
+       background : white;
+       border : 1px solid;
+   }
+   #navbar
+  {
+     background-color : #fff;
+     height : 92%;
+     width : 18%;
+     border : 1px solid;
+     position : fixed;
+     top : 8px;
+     padding : 15px;  
+  }
+  #navbar h1 {
+    font-size: 23px;
+  }
+  #intro
+  {
+     line-height : 150%;
+     background-color : #edfffd;
+     padding : 15px;
+  }
+  #about
+  {
+     line-height : 150%;
+     background-color : #fff2e2;
+     padding : 15px;
+  }
+  code
+  {
+     line-height : 150%;
+  }
+  #code
+  {
+     background-color : #f7f8f8;
+     padding : 15px;
+  }
+  hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  a.nav-link
+  {
+     font-size : 18px;
+     color : black;
+     text-decoration : none;
+     padding: 10px;
+     padding-right: 50px;
+  }
+  a.nav-link:hover {
+    color : rgb(36, 174, 199);
+    font-weight: bolder;
+  }
+  #output
+  {
+     width : 50%;
+     padding : 15px;
+     border : 1px solid;
+     background-color : #ffeffc;
+  }
+  #up
+  {
+     padding : 15px;
+     width : 35%;
+     border : 1px solid;
+     background-color : #ffeffc;
+  }
+
+  @media screen and (max-width: 1200px) {
+
+    #navbar {
+        width : 17%;
+    }
+
+  }
+
+  @media screen and (max-width: 1070px) {
+
+    #navbar {
+        width : 16%;
+    }
+
+  }
+
+  @media screen and (max-width: 900px) {
+
+        #main-doc {
+            width: 65%;
+        }
+
+  }
+
+  @media screen and (max-width: 800px) {
+
+    #navbar {
+        width : 200px;
+        padding : 10px; 
+    }
+
+    .nav-head {
+        font-size: 12px;
+    }
+
+    #main-doc {
+        width: 55%;
+    }
+
+    a.nav-link {
+        padding-right: 5px;
+        font-size : 15px;
+    }
+
+}

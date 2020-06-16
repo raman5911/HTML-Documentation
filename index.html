@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Documentation page</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<main id="main-doc">
+			<section class="main-section" id="Introduction">
+				<header>
+                    <h1 class="title">A Documentation on HTML Markup Language</h1>
+					<h2>Introduction</h2>
+				</header>
+				<h3>What is HTML ?</h3>
+				<div id="intro"><br> <b>HTML</b> is a markup language for describing web documents (web pages)<br>
+					<ul>
+						<li><b>HTML</b> stands for <b>Hyper Text Markup Language</b>. HTML adds "markup" to
+						       Standard English text. "Hyper Text" refers to links - hyperlinks -  that connect Web pages to one
+						       another.</li><br>
+						<li>A markup language is a set of markup tags.</li><br>
+						<li>HTML is not case sensitive.</li>
+					</ul>
+				</div>
+			</section>
+			<section class="main-section" id="HTML_Basics">
+				<header>
+					<h1>HTML Basics</h1>
+				</header>
+				<u><h3>HTML Tags, Attributes and Elements<h3></u>
+				<h4><u>Tags</u> :</h4>
+				<p>HTML tags are keywords (tag names) surrounded by angle brackets : <br>
+				      <div id="code">
+				      <code>
+				      	&lt;tagname&gt;content&lt;/tagname&gt;
+				      </code>
+				      </div><br>
+				      <div id="about">
+				      <ul>
+					<li>HTML tags normally come in pairs like &lt;p&gt; and &lt;/p&gt;.</li><br>
+					<li>The first tag in a pair is the start tag; and the second tag is the end tag.</li><br>
+ 					<li>The end tag is written like the start tag, but with a slash before the tag name.</li>
+				      </ul>
+				      </div>
+				</p>
+				<h4><u>Attributes</u> :</h4>
+				<p>Tags can also have attributes, which are extra bits of information. Attributes appear inside the opening tag and their values sit inside 
+				       quotation marks. They look something like : <br>
+				       <div id="code">
+				       <code>
+				        	&lt;tag attribute="value"&gt;Margarine&lt;/tag&gt;
+				       </code>
+				       </div>
+				</p>
+				<h4><u>Elements</u> :</h4>
+				<p>Elements are the bits that make up web pages.<br><br>
+				      <em><u>Example 1</u> :</em><br>
+					<div id="code">
+					<code>&lt;body&gt;The quick brown fox jumps over the lazy dog.&lt;/body&gt;</code>
+					</div><br>
+				      everything that is in between (and includes) &lt;body&gt; and &lt;/body&gt; tags is the body element.<br><br>
+				      <em><u>Example 2</u> :</em><br><br>
+				      <div id="code">
+				      <code>&lt;title&gt;Rumple Stiltkin&lt;/title&gt;</code><br>
+				      </div><br>
+				      everything that is in between (and includes) &lt;title&gt; and &lt;/title&gt; tags is the title element.
+				</p>
+				<h4>A typical HTML document will have following structure :</h4>
+				<div id="code">
+			                <code>&lt;!DOCTYPE html&gt;<br>
+				      	 &lt;html&gt; <br>
+				      	 &nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt; Title here &lt;/title&gt; <br>
+				      	 &nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      	 &nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      	   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWebpage content goes here.<br>
+				       	 &nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      	 &lt;/html&gt;
+				</code><br>
+				</div><br>
+				<div id="intro">
+				<ul>
+					<li>&lt;!DOCTYPE&gt; :- This tag defines the document type and HTML version.</li><br>
+					<li>&lt;html&gt; :- This tag encloses the complete HTML document and mainly comprises of document
+					      header which is represented by &lt;head&gt;...&lt;/head&gt; and document body which is represented 
+					      by &lt;body&gt;...&lt;/body&gt; tags.</li><br>
+					<li>&lt;head&gt; :- This tag represents the document's header which can keep other HTML tags like &lt;title&gt;
+					      ,&lt;link&gt;, etc.</li></br>
+					<li>&lt;title&gt; :- The &lt;title&gt; tag is used inside the &lt;head&gt; tag to mention the Document title.</li><br>
+					<li>&lt;body&gt; :- This tag represents the document's body which keeps other HTML tags like &lt;h1&gt;, 
+					      &lt;div&gt;, &lt;p&gt;, etc.</li>
+				</ul>
+				</div>
+			</section>
+			<section class="main-section" id="HTML_Comments">
+				<header>
+					<h1>HTML Comments</h1>
+				</header>
+					<div id="intro">
+					<ul>
+						<li>Comment is a piece of code which is ignored by any web browser.</li><br>
+						<li>It is a good practice to add comments into your HTML code, especially in complex documents, to indicate sections of a document,
+						      and any other notes to anyone looking at the code.</li><br>
+						<li>Comments help you and others understand your code and increases code readability.</li><br>
+						<li>HTML comments are placed in between &lt;!-- ... --&gt; tags. So any content placed with-in &lt;!-- ... --&gt;
+						      tags will be treated as comment and will be completely ignored by the browser.</li>
+					</ul>
+					</div>
+			</section>
+			<section class="main-section" id="Marquee_Tag">
+				<header>
+					<h1>Marquee Tag</h1>
+				</header>
+				<div id="intro">An <b>HTML marquee</b> is a scrolling piece of text displayed either horizontally across or vertically down your webpage
+				      depending upon the settings. This is created by using HTML &lt;marquee&gt; tag. We can use attributes such as width, 
+				      height, direction, etc to make the scrolling text more stylish.<br></div>
+				<p><em><u>Example 1</u></em> :- <br>
+				<div id="code">
+			                <code>&lt;!DOCTYPE html&gt;<br>
+				      	 &lt;html&gt; <br>
+				      	 &nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML marquee tag&lt;/title&gt; <br>
+				      	 &nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      	 &nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;marquee&gt;This is basic example of marquee&lt;/marquee&gt; <br>
+				       	 &nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      	 &lt;/html&gt;
+				</code><br>
+				</div>
+				      <h4><u>Output</u> :-</h4>
+				      <div id="output">
+				      <marquee>This is basic example of marquee</marquee>
+				      </div><br>
+ 				      <em><u>Example 2</u></em> :- <br><br>
+				      This text will take only 50% width.<br><br>
+				      <div id="code"> 
+				      <code>&lt;!DOCTYPE html&gt; <br>
+				      	&lt;html&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML marquee tag&lt;/title&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;marquee width="50%"&gt;This example will take only 50% width&lt;/marquee&gt; <br>
+				       	&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      	&lt;/html&gt;</code>
+				      </div>
+				      <h4><u>Output</u> :-</h4>
+				      <div id="output">
+				      <marquee width="50%">This example will take only 50% width</marquee></div><br>
+				      <em><u>Example 3</u> :-</em> <br><br>
+				      This text will scroll from left to right.<br><br>
+				      <div id="code">
+				      <code>&lt;!DOCTYPE html&gt; <br>
+				      	&lt;html&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML marquee tag&lt;/title&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;marquee direction="right"&gt;This text will scroll from left to right&lt;/marquee&gt; <br>
+				       	&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      	&lt;/html&gt; <br></code>
+				      </div>
+				      <h4><u>Output</u> :-</h4>
+				      <div id="output">
+				      <marquee direction="right">This text will scroll from left to right</marquee></div><br>
+				       <em><u>Example 4</u> :-</em> <br><br>
+				      This text will scroll from bottom to up.<br><br>
+				      <div  id="code">
+				      <code>&lt;!DOCTYPE html&gt; <br>
+				      	&lt;html&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML marquee tag&lt;/title&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;marquee direction="up"&gt;This text will scroll from bottom to up&lt;/marquee&gt; <br>
+				       	&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      	&lt;/html&gt; <br></code>
+				      </div>
+				      <h4><u>Output</u> :-</h4>
+				      <div id="up">
+				      <marquee direction="up">This text will scroll from bottom to up</marquee></div>
+			</section>
+			<section class="main-section" id="HTML_List">
+				<header>
+					<h1>HTML List</h1>
+				</header>
+				<p>
+				<div id="intro">HTML offers web authors different ways for specifying lists of information. All lists must contain one or more
+						 list elements. Lists may contain : <br>
+				      	<ul>
+				      	<li>&lt;ul&gt; - An unordered list. This will list items using plain bullets.<br><br>
+				      	<li>&lt;ol&gt; - An ordered list. This will use different schemes of numbers to list your items.<br>
+				      	</ul>
+				</div>
+				      <u><h3>HTML Unordered Lists</h3></u>
+				      <div id="about">
+				      <p>An unordered list is a collection of related items that have no special order or using HTML &lt;ul&gt; tag. Each item in the list
+			  	            is marked with a bullet.</p>
+				      <h4>The type attribute</h4>
+				      <p>You can use type attribute for &lt;ul&gt; tag to specify the type of bullet you like. By default it is a disc. Following are the 
+				            possible options : </p>
+				      </div>
+				      <h4>Syntax :</h4>
+				      <div id="code">
+				      <code>&lt;ul type="square"&gt;<br>
+				            &lt;ul type="disc"&gt;<br>
+				            &lt;ul type="circle"&gt;
+				      </code>
+				      </div><br>
+				      <em><u>Example 1</u> :-</em> <br><br>
+				      Default value of type attribute in unordered list is "disc".<br><br>
+				      <div id="code">
+				      <code>&lt;!DOCTYPE html&gt; <br>
+				      	&lt;html&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML Unordered List&lt;/title&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;ul&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C&lt;/li&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C++&lt;/li&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;Java&lt;/li&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;HTML&lt;/li&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/ul&gt;<br>
+				       	&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      	&lt;/html&gt;</code>
+				      </div>
+				      <h4><u>Output</u> :-</h4>
+				      <div id="output">
+				      <ul>
+				      	<li>C</li>
+				      	<li>C++</li>
+				      	<li>Java</li>
+				      	<li>HTML</li>
+				      </ul></div><br>
+				      <em><u>Example 2</u> :-</em><br><br>
+				      Following is an example where we used &lt;ul type="square"&gt;<br><br>
+				      <div id="code">
+				      <code>&lt;!DOCTYPE html&gt; <br>
+				      	&lt;html&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML Unordered List&lt;/title&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;ul type="square"&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C&lt;/li&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C++&lt;/li&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;Java&lt;/li&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;HTML&lt;/li&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/ul&gt;<br>
+				       	&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      	&lt;/html&gt;</code>
+				      </div>
+				     <h4><u>Output</u> :-</h4>
+				       <div id="output">
+				       <ul type="square">
+				      	<li>C</li>
+				      	<li>C++</li>
+				      	<li>Java</li>
+				      	<li>HTML</li>
+				      </ul></div><br>
+				       <em><u>Example 3</u> :-</em><br><br>
+				      Following is an example where we used &lt;ul type="circle"&gt;<br><br>
+				      <div id="code">
+				      <code>&lt;!DOCTYPE html&gt; <br>
+				      	&lt;html&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML Unordered List&lt;/title&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;ul type="circle"&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C&lt;/li&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C++&lt;/li&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;Java&lt;/li&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;HTML&lt;/li&gt;<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/ul&gt;<br>
+				       	&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      &lt;/html&gt;</code>
+				      </div>
+				      <h4><u>Output</u> :-</h4> 
+				       <div id="output">
+				       <ul type="circle">
+				      	<li>C</li>
+				      	<li>C++</li>
+				      	<li>Java</li>
+				      	<li>HTML</li>
+				      </ul></div>
+				      <u><h3>HTML Ordered Lists</h3></u>
+				      <div id="about">
+				      <p>If you are required to put your items in a numbered list instead of bulleted then HTML ordered list will be used. This list is
+				            created by using &lt;ol&gt; tag. The numbering starts at one and is incremented by one for each successive ordered list
+				            element tagged with &lt;li&gt;.</p>
+				            <h4>The type attribute</h4>
+				               You can use type attribute for &lt;ol&gt; tag to specify the type of numbering you like. By default it is a number.
+				      </div>	
+				      <br>
+				               Following are the possible options :<br><br>
+					<em><u>Example 1</u> :-</em> <br><br>
+					Default value of type attribute in ordered list is "1".<br><br>
+					<div id="code">
+					<code>
+						&lt;!DOCTYPE html&gt; <br>
+				      		&lt;html&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML Ordered List&lt;/title&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;ol&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C++&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;Java&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;HTML&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/ol&gt;<br>
+				       		&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      		&lt;/html&gt;</code>
+						</div>
+				      		<h4><u>Output</u> :-</h4> 
+						<div id="output">
+				       		<ol>
+				      		<li>C</li>
+				      		<li>C++</li>
+				      		<li>Java</li>
+				      		<li>HTML</li>
+				      		</ol>
+						</div>
+						<br>
+					<em><u>Example 2</u> :-</em> <br><br>
+					Following is an example where we used &lt;ol type="I"&gt;.<br><br>
+					<div id="code">
+					<code>
+						&lt;!DOCTYPE html&gt; <br>
+				      		&lt;html&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML Ordered List&lt;/title&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;ol type="I"&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C++&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;Java&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;HTML&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/ol&gt;<br>
+				       		&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      		&lt;/html&gt;</code>
+						</div>
+				      		<h4><u>Output</u> :-</h4> 
+						<div id="output">
+				       		<ol type="I">
+				      		<li>C</li>
+				      		<li>C++</li>
+				      		<li>Java</li>
+				      		<li>HTML</li>
+				      		</ol>
+						</div>
+						<br>
+					<em><u>Example 3</u> :-</em> <br><br>
+					Following is an example where we used &lt;ol type="i"&gt;.<br><br>
+					<div id="code">
+					<code>
+						&lt;!DOCTYPE html&gt; <br>
+				      		&lt;html&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML Ordered List&lt;/title&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;ol type="i"&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C++&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;Java&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;HTML&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/ol&gt;<br>
+				       		&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      		&lt;/html&gt;
+					</code>
+					</div>
+				      		<h4><u>Output</u> :-</h4> 
+						<div id="output">
+				       		<ol type="i">
+				      		<li>C</li>
+				      		<li>C++</li>
+				      		<li>Java</li>
+				      		<li>HTML</li>
+				      		</ol>
+						</div>
+						<br>
+					<em><u>Example 4</u> :-</em> <br><br>
+					Following is an example where we used &lt;ol type="A"&gt;.<br><br>
+					<div id="code">
+					<code>
+						&lt;!DOCTYPE html&gt; <br>
+				      		&lt;html&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML Ordered List&lt;/title&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;ol type="A"&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C++&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;Java&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;HTML&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/ol&gt;<br>
+				       		&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      		&lt;/html&gt;
+					</code>
+					</div>
+				      		<h4><u>Output</u> :-</h4> 
+						<div id="output">
+				       		<ol type="A">
+				      		<li>C</li>
+				      		<li>C++</li>
+				      		<li>Java</li>
+				      		<li>HTML</li>
+				      		</ol>
+						</div>
+						<br>
+					<em><u>Example 5</u> :-</em> <br><br>
+					Following is an example where we used &lt;ol type="a"&gt;.<br><br>
+					<div id="code">
+					<code>
+						&lt;!DOCTYPE html&gt; <br>
+				      		&lt;html&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML Ordered List&lt;/title&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;ol type="a"&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C++&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;Java&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;HTML&lt;/li&gt;<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/ol&gt;<br>
+				       		&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      		&lt;/html&gt;
+					</code>
+					</div>
+				      		<h4><u>Output</u> :-</h4>
+						<div id="output">
+				       		<ol type="a">
+				      		<li>C</li>
+				      		<li>C++</li>
+				      		<li>Java</li>
+				      		<li>HTML</li>
+				      		</ol>
+						</div><br>
+					<div id="about">
+					       <h4>The start Attribute</h4>
+					        You can use start attribute for &lt;ol&gt; tag to specify the starting point of numbering you need.
+					</div>
+					<br>
+					        <em><u>Example</u> :-</em> <br><br>
+					        Following is an example where we used &lt;ol type="i" start="4"&gt;<br><br>
+					        <div id="code">
+					        <code>
+						&lt;!DOCTYPE html&gt; <br>
+				      		&lt;html&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;head&gt; <br>
+				       		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt;HTML Ordered List&lt;/title&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;/head&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&lt;body&gt; <br>
+				      		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;ol type="i" start="4"&gt;<br>
+					       	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C&lt;/li&gt;<br>
+					     	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;C++&lt;/li&gt;<br>
+					    	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;Java&lt;/li&gt;<br>
+					    	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;HTML&lt;/li&gt;<br>
+					     	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/ol&gt;<br>
+				       	      	&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br>
+				      	       	&lt;/html&gt;
+					       </code>
+					       </div>
+				      		<h4><u>Output</u> :-</h4> 
+						<div id="output">
+				       		<ol type="i" start="4">
+				      		<li>C</li>
+				      		<li>C++</li>
+				      		<li>Java</li>
+				      		<li>HTML</li>
+				      		</ol>
+						</div>
+					<br><br>
+			</p>
+			</section>
+		</main>
+		<nav id="navbar">
+			<header>
+				<h1 class="nav-head">Table of Contents</h1>
+			</header>
+			<hr>
+			<a href="#Introduction" class="nav-link">Introduction</a><br><hr>
+			<a href="#HTML_Basics" class="nav-link">HTML Basics</a><br><hr>
+			<a href="#HTML_Comments" class="nav-link">HTML Comments</a><br><hr>
+			<a href="#Marquee_Tag" class="nav-link">Marquee Tag</a><br><hr>
+			<a href="#HTML_List" class="nav-link">HTML List</a><br><hr><br><br>
+	 
+		</nav>
+	</body>
+</html>
